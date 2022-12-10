@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  /*50F2CE*/
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+    171.8deg,
+    rgba(5, 111, 146, 1) 10.5%,
+    rgba(6, 57, 84, 1) 50.6%,
+    rgb(16, 40, 53) 80.6%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  background: rgba(5, 111, 146, 0.127);
+  box-shadow: 0 8px 32px 0 rgb(48, 172, 255);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 2px solid rgba(48, 172, 255);
+  border-radius: 20px;
+  min-width: 300px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.cabecera i {
+  color: rgba(48, 172, 255);
+  font-size: 100px;
+  text-shadow: 0px 8px 15px rgba(48, 172, 255, 0.69);
+}
+
+.From {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+}
+
+.contenedor-input {
+    position: relative;
+  background: rgb(2, 37, 82);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 37, 82, 1) 0%,
+    rgba(1, 84, 148, 1) 53%
+  );
+  padding-left:10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.contenedor-input i{
+    color: rgba(48, 172, 255);
+    text-shadow: 0px 8px 15px rgba(48, 172, 255, 0.69);
+}
+.contenedor-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: #30acffb0;
+    color: #fff;
+    padding:10px;
+    font-size: 1rem;
+}
+
+.contenedor-input label{
+    position: absolute;
+    top: 0;
+    left:40px;
+    transform: translateY(10px);
+    color: #30acffb0;
+    cursor: pointer;
+    transition: .5s;
+}
+.contenedor-input input:focus+label,
+.contenedor-input input:not(:placeholder-shown)+label{
+    transform: translateY(-20px);
+    left: 30px;
+    font-size: 12px;
+    color: #fff;
+}
+.detalles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.detalles label{
+    color: #fff;
+    text-align: center;
+    
+}
+
+.detalles a{
+    text-decoration: none;
+    color: #30acffb0;
+}
+
+button{
+    background: rgb(2, 37, 82);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 37, 82, 1) 0%,
+      rgba(1, 84, 148, 1) 53%
+    );
+    width: 100%;
+    height:50px;
+    border: none;
+    border-radius: 10px;
+    color:#fff;
+    font-weight: bold;
+    transition: .5s;
+}
+
+button:hover{
+    background: rgb(2, 48, 108);
+    background: linear-gradient(
+      90deg,
+      rgb(2, 49, 110) 0%,
+      rgb(2, 99, 174) 53%
+    );
+    box-shadow: 0px 8px 15px rgba(48, 172, 255, 0.69);
+}
