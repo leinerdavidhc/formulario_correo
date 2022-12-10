@@ -16,15 +16,15 @@
        <div class="cabecera">
         <i class="fa-solid fa-circle-user"></i>
        </div>
-       <form class="From">
+       <form class="From" method="post">
             <div class="contenedor-input">
                 <i class="fa-solid fa-circle-user"></i>
-                <input type="email" placeholder=" " id="para">
+                <input type="email" placeholder=" " id="para" name="email">
                 <label for="para">Para</label>
             </div>
             <div class="contenedor-input">
                 <i class="fa-solid fa-envelope"></i>
-                <input type="text" placeholder=" " id="mensaje">
+                <input type="text" placeholder=" " id="mensaje" name="mensaje">
                 <label for="mensaje">Mensaje</label>
             </div>
             <div class="detalles">
@@ -34,11 +34,8 @@
                 </div>
                 <a href="#">olvide mi contraseña?</a>
             </div>
-            <button>Ingresar</button>
+            <button type="submit" name="enviar">Ingresar</button>
        </form>
     </div>
-    <?php
-    include("correo.php");
-    ?>
 </body>
 </html>
